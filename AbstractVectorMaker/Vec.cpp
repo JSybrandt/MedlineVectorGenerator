@@ -5,7 +5,7 @@ using namespace std;
 Vec::Vec(vector<float> data)
 {
 	if (data.size() != SIZE)
-		throw exception("Unequal Size");
+		throw exception();
 	this->data = data;
 }
 
