@@ -28,13 +28,13 @@ int main() {
 	Dict wordDict(VECTOR_FILE);
 
 	for (int i = 0; i < NUM_CANON_FILES; i++) {
-		fstream canonFile = fstream(getCanonFilePath(i),ios::in);
-		fstream outputFile = fstream(getOutputFilePath(i), ios::out);
+		ifstream canonFile(getCanonFilePath(i));
+		ofstream outputFile(getOutputFilePath(i));
 		string canonLine;
 
 		while (getline(canonFile,canonLine)) {
 			if (canonLine.size() > 0) {
-				Abstract abs = Abstract(canonLine, &wordDict);
+				Abstract abs(canonLine, &wordDict);
 				outputFile << abs.toString() << endl;
 			}
 		}

@@ -2,7 +2,7 @@
 
 using namespace std;
 Dict::Dict(string file) {
-	fstream dataFile = fstream(file, ios::in);
+	ifstream dataFile(file);
 	string line;
 	while (getline(dataFile,line)) {
 		if (line.length() > 0) {
