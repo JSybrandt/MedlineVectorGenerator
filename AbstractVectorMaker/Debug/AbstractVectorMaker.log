@@ -1,5 +1,8 @@
 ﻿  Vec.cpp
   Source.cpp
   Generating Code...
-  AbstractVectorMaker.vcxproj -> C:\Users\JSybrandt\documents\visual studio 2015\Projects\AbstractVectorMaker\Debug\AbstractVectorMaker.exe
-  AbstractVectorMaker.vcxproj -> C:\Users\JSybrandt\documents\visual studio 2015\Projects\AbstractVectorMaker\Debug\AbstractVectorMaker.pdb (Full PDB)
+  Compiling...
+  Dict.cpp
+c:\users\jsybrandt\documents\visual studio 2015\projects\abstractvectormaker\abstractvectormaker\dict.cpp : fatal error C1041: cannot open program database 'C:\Users\JSybrandt\documents\visual studio 2015\Projects\AbstractVectorMaker\AbstractVectorMaker\Debug\vc140.idb'; if multiple CL.EXE write to the same .PDB file, please use /FS
+  Abstract.cpp
+  Generating Code...

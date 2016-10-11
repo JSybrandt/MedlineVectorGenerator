@@ -23,11 +23,20 @@ string getOutputFilePath(int id) {
 	return OUTPUT_FOLDER + "vectors" + to_string(id);
 }
 
-int main() {
+int main(int argc, char** argv) {
 
+	int start = 0;
+	if (argc > 1) {
+		cout << "DEBUGGING MODE ENABLED" << endl;
+		start = 8;
+	}
+
+	cout << "Building Dict" << endl;
 	Dict wordDict(VECTOR_FILE);
+	cout << "Finished Building Dict" << endl;
 
-	for (int i = 0; i < NUM_CANON_FILES; i++) {
+	for (int i = start; i < NUM_CANON_FILES; i++) {
+		cout << "Started Canon File " << i << endl;
 		ifstream canonFile(getCanonFilePath(i));
 		ofstream outputFile(getOutputFilePath(i));
 		string canonLine;

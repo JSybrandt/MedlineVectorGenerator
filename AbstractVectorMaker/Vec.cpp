@@ -4,8 +4,10 @@ using namespace std;
 
 Vec::Vec(vector<float> data)
 {
-	if (data.size() != SIZE)
+	if (data.size() != SIZE) {
+		cerr << "Invalid Vector Size:" << data.size() << endl;
 		throw exception();
+	}
 	this->data = data;
 }
 

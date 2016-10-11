@@ -3,6 +3,7 @@
 #include <vector>
 #include<exception>
 #include<string>
+#include<iostream>
 
 using std::vector;
 using std::string;
