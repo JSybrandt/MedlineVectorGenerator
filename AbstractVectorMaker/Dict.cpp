@@ -4,7 +4,9 @@ using namespace std;
 Dict::Dict(string file) {
 	ifstream dataFile(file);
 	string line;
+	bool firstLine = true;
 	while (getline(dataFile,line)) {
+		if (firstLine) { firstLine = false; continue;}
 		if (line.length() > 0) {
 			stringstream s;
 			s << line;
