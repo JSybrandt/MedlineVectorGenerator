@@ -26,7 +26,7 @@ string Vec::toString()
 {
 	string s;
 	for (float f : data) {
-		s += to_string(f);
+		s += to_string(f) + " ";
 	}
 	return s;
 }
